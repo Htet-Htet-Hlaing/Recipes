@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+
+    scroll-behavior: smooth;
+
+}
+
+body{
+
+    height: 500vh;
+
+}
+.contact{
+    background-image: url("../img/footer-bg.jpg"),url("../img/footer-bg.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    bottom:0;
+
+    /* background-attachment: fixed; */
+}
+.sec1{
+    height:400vh;
+}
+
+.footer{
+    padding-top: 150px;
+}
+
+.site-logo{
+    width: 100px;
+}
+.site-nav{
+    position: absolute;
+    top: 0;
+    z-index: 50;
+}
+.navbar:hover{
+    background-color: green;
+}
+@media screen and (max-width: 780px ) {
+
+    .nav-link.current-section{
+        border: 2px solid #1A129F;
+        border-radius: 10em;
+        padding: 0.5rem 1.3rem !important;
+    }
+
+    .site-nav{
+        background-color: #ffffffee;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 0 5px #00000015;
+    }
+
+    .site-nav .menu-icon{
+        color: #1A129F !important;
+    }
+
+    .navbar-nav{
+        padding-top: 20px;
+    }
+
+    .site-nav .nav-link{
+        color: #1A129F !important;
+        padding: 15px 20px;
+        background: #ffffff;
+        margin-bottom: 20px;
+        box-shadow: 0 0 5px #00000015;
+        border-radius: 10em;
+    }
+    .contact{
+        background-size: 100%;
+    }
+
+}
+@media screen and (max-width: 576px ){
+
+
+    .site-nav{
+        background-color: #ffffffee;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 0 5px #00000015;
+    }
+    .contact{
+        background-size: 100%;
+        background-position: center;
+    }
+
+    .site-nav .menu-icon{
+        color: #1A129F !important;
+    }
+
+    .navbar-nav{
+        padding-top: 20px;
+    }
+
+    .site-nav .nav-link{
+        color: #1A129F !important;
+        padding: 15px 20px;
+        background: #ffffff;
+        margin-bottom: 20px;
+        box-shadow: 0 0 5px #00000015;
+        border-radius: 10em;
+    }
+
+    .contact{
+        background-attachment: scroll;
+    }
+
+
+}
